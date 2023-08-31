@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- REQUIRED META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple portfolio website.">
+    <meta name="robots" content="index, follow">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="resources/assets/architect.png" type="image/x-icon">
+    <!-- TITLE -->
+    <title>Architecture</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css" />
+
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/query.css">
+</head>
+<body>
+
+<!-- START HERO SECTION -->
+   <header id="hero2">
+        <div class="logo1">
+            <a href="#">A.</a>
+        </div> 
+        <div class="container">
+            <nav class="clearfix"  data-uk-sticky="start: 200; offset: 80; animation: uk-animation-slide-top">
+                <div class="menu">
+                    <a href="#" onclick="openMenu()">
+                         <ion-icon name="menu-outline"></ion-icon>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="menu-container" id="menu-container" onclick="closeMenu()">
+            <div class="close-btn">
+                <a href="#" onclick="closeMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="nav-menu-items">
+                <ul>
+                    <li><a href="#hero2" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-content-box">
+                    <div class="hero-title">
+                        <h1>HEAVEN BARN FROM FIRS</h1><br>
+                        <a href="#portfolio">View Portfolio</a>
+                    </div>
+                    
+                    <!-- This is a button toggling the modal -->
+                    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example"><a href="">View Project</a></button>
+
+                    <!-- This is the modal -->
+                    <div id="modal-example" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <h2 class="uk-modal-title">Project</h2>
+                                <ul class="ul-style">
+                                    <li><a href="index.html" target="_blank">HTML</a></li>
+                                    <li><a href="resources/css/style.css" target="_blank">CSS</a></li>
+                                    <li><a href="resources/js/main.js" target="_blank">Javascript</a></li>
+                                    <li><a href="resources/css/query.css" target="_blank">Bootstrap</a></li>
+                                    <li><a href="vendors/js/jquery-3.7.0.min.js" target="_blank">JQuery</a></li>
+                                    <li><a href="https://md000easin.github.io/paul-lapkin/" target="_blank">Web Design</a></li> 
+                                    <li><a href="https://md000easin.github.io/paul-lapkin/" target="_blank">Web Development</a></li> 
+                                    <li><a href="https://md000easin.github.io/paul-lapkin/" target="_blank">WordPress</a></li>
+                                </ul>
+                                <p class="uk-text-right">
+                                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                    <button class="uk-button uk-button-primary" type="button">Save</button>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   </header>
+<!-- END HERO SECTION -->
+
+ 
+<!-- START ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <ion-icon name="send-outline"></ion-icon>
+            <span>WHO ARE WE</span>
+            <h2>About Us</h2>
+            <div class="about-grid">
+                <div class="about-grid-item">
+                    <div class="img-style">
+                        <a href="">
+                            <img src="resources/assets/c35c9e491bdc9ff8098188f7d5344501.jpg" alt="about-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="about-grid-item">
+                    <p>Amet, consectetur adipiscing elit. Commodo viverra eu volutpat amet, leo ultrici non senectus odio dolor. Id at urna non porttitor elentum. Viverra senectus lorem ipsum dolor sit adui ultricies dolor varius nibh velit viverra euen.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo viverra eu volutpat amet, leo non senetus odio dolor. Id at urna non portitor etum. Vivera senectus elit dui ultricies dolor. Varius nibh velit pellentesque sapien, sapien neque dignissim.</p>
+                                
+                    <p>Commodo vivera eu volutpat amet, leo non senectus odio dolor. Id at urna non porttitor elementum. Viverra senectus dui ultricies dolor </p>
+                    <div class="button">
+                        <a href="#portfolio">
+                            VIEW MY PORTFOLIO
+                        </a>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!-- END ABOUT SECTION-->
+
+
+    <!--START OUR PORTFOLIO-->
+    <section id="portfolio">
+        <div class="container">
+            <ion-icon name="send-outline"></ion-icon>
+            <span>SOME OF OUR WORKS</span>
+            <h2>Our Portfolio</h2>
+            <div class="work-filter" data-uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+                <button type="button" data-filter="all">ALL</button>
+                <button type="button" data-filter=".m2, .m1, .m6">HOUSES</button>
+                <button type="button" data-filter=" .m3, .m7, .m2">BUILDINGS</button>
+                <button type="button" data-filter=" .m8, .m9, .m5">HOTELS</button>
+                <button type="button" data-filter=" .m5, .m4">INTERIOR</button>
+                <button type="button" data-filter=" .m5">LIVING ROOMS</button>
+            </div>
+
+            <div class="work-grid" uk-lightbox="animation: slide">
+                <div class="work-grid-item mix m1">
+                    <a href="resources/assets/tab1.jpg">
+                        <img src="resources/assets/tab1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="work-grid-item mix m2">
+                    <a href="resources/assets/tab2.jpg">
+                        <img src="resources/assets/tab2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="work-grid-item mix m3">
+                    <a href="resources/assets/tab3.jpg">
+                        <img src="resources/assets/tab3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="work-grid-item mix m4">
+                    <a href="resources/assets/tab4.jpg">
+                        <img src="resources/assets/tab4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="work-grid-item mix m5">
+                    <a href="resources/assets/tab5.jpg">
+                        <img src="resources/assets/tab5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="work-grid-item mix m6">
+                    <a href="resources/assets/tab6.jpeg">
+                        <img src="resources/assets/tab6.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="work-grid-item mix m7">
+                    <a href="resources/assets/tab7.jpg">
+                        <img src="resources/assets/tab7.jpg" alt="">
+                    </a>
+                </div>
+                <div class="work-grid-item mix m8">
+                    <a href="resources/assets/tab8.jpg">
+                        <img src="resources/assets/tab8.jpg" alt="">
+                    </a>
+                </div>
+                <div class="work-grid-item mix m9">
+                    <a href="resources/assets/tab9.jpg">
+                        <img src="resources/assets/tab9.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--END OUR PORTFOLIO-->
+    
+
+<!-- START SERVICE SECTION -->
+    <section id="service">
+          <div class="container">
+                <ion-icon name="send-outline"></ion-icon>
+                <span>WHAT WE DO</span>
+                <h2>Services</h2>
+                <div class="service-grid">
+                    <div class="service-grid-item uk-card-hover uk-card-body uk-light">
+                        <h2>01</h2>
+                        <h3>Architecture Portfolio</h3>
+                        <p>Lorem, ipsum dolor sit amet leo consectetur adipisicing elit. Ipsam aperiam sequi maiores, totam deleniti possimus neque esse labore non quasi.</p>
+                    </div>
+                    <div class="service-grid-item uk-card-hover uk-card-body uk-light">
+                        <h2>02</h2>
+                        <h3>Planning Process</h3>
+                        <p>Lorem, ipsum dolor sit amet leo consectetur adipisicing elit. Ipsam aperiam sequi maiores, totam deleniti possimus neque esse labore non quasi.</p>
+                    </div>
+                    <div class="service-grid-item uk-card-hover uk-card-body uk-light">
+                        <h2>03</h2>
+                        <h3>Unique Design</h3>
+                        <p>Lorem, ipsum dolor sit amet leo consectetur adipisicing elit. Ipsam aperiam sequi maiores, totam deleniti possimus neque esse labore non quasi.</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                        <div class="form-grid-item">
+                            <a href="#">
+                                <img src="resources/assets/service.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="form-grid-item">
+                            <h2>Subscribe Us</h2>
+                                <p>
+                                    Join our newsletter to stay updated with super discounts and amazing offers. 300+ have already subscribed us
+                                </p>
+                            <form action="#" class="service-form">
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required><br> 
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                 </div>
+          </div>
+    </section>
+<!-- END SERVICE SECTION -->
+
+
+<!--START LATEST BLOG SECTION -->
+    <section id="blog">
+        <div class="container">
+                    <ion-icon name="send-outline"></ion-icon>
+                    <span>READ OUR BLOG</span>
+                    <h2>Latest Blog</h2>
+                    <div class="blog-grid">
+                        <div class="blog-grid-item uk-card-hover uk-card-body uk-light">
+                            <a href="">
+                                <img src="resources/assets/postimg1.jpg" alt="">
+                            </a>
+                            <div class="blog-text">
+                                <p class="blog-date">Mar 30, 2021</p>
+                                <a href="#">
+                                    Modern Vibes Bedrooms, Todays Trending Design
+                                </a>
+                            <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.</p>
+                            </div>
+                        </div>
+
+                        <div class="blog-grid-item uk-card-hover uk-card-body uk-light">
+                            <a href="">
+                                <img src="resources/assets/postimg2.jpg" alt="">
+                            </a>
+                             <div class="blog-text">
+                                <p class="blog-date">Sept 2, 2021</p>
+                                <a href="">
+                                    How To Make Minimalist Living Rooms Pop-Out
+                                </a>
+                                <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.</p>
+                            </div>
+                        </div>
+                        <div class="blog-grid-item uk-card-hover uk-card-body uk-light">
+                            <a href="">
+                                <img src="resources/assets/postimg3.jpg" alt="">
+                            </a>
+                            <div class="blog-text">
+                                <p class="blog-date">Jan 14, 2022</p>
+                                <a href="">
+                                    How To Make Your Resort That Looks Outstanding
+                                </a>
+                                <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-button">
+                        <a href="">
+                            VIEW ALL BLOG
+                        </a>
+                    </div>
+        </div>
+    </section>
+<!--END  LATEST BLOG SECTION -->
+
+
+<!-- START CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <ion-icon name="send-outline"></ion-icon>
+            <span>GET IN TOUCH</span>
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-grid-item">
+                    <p>If you have any question about our process or company? Let us know how we can help you.</p>
+                    <form action="#" class="contact-form">
+                        <input type="text" id="name" class="name" placeholder="Your Full Name*" required>
+                        <input type="email" id="email" class="email" placeholder="Your Email Adress*" required>
+                        <textarea name="describe" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button class="contact-btn" type="submit"> Submit</button>
+                    </form>
+                </div>
+
+                <div class="contact-grid-item contact-nested-grid" >
+
+                    <div class="contact-nested-grid-item">  
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="details-box">
+                           <strong>ADDRESS 1:</strong>
+                           <p>3927 Red Maple Drive, Los Angeles</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-nested-grid-item">  
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="details-box">
+                           <strong>ADDRESS 2:</strong>
+                           <p>2489 Locust Court, Los Angeles</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-nested-grid-item">  
+                        <div class="icon-box">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="details-box">
+                           <strong> PHONE:</strong>
+                           <p>+63 667 341 3463</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-nested-grid-item">  
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="details-box">
+                           <strong>EMAIL:</strong>
+                           <p>contact@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- START CONTACT SECTION -->
+
+
+<!-- START TESTIMONIAL SECTION -->
+    <section id="testimonial">
+            <div class="container">
+                <ion-icon name="send-outline"></ion-icon>
+                <span>WHAT CLIENTS SAYS</span>
+                <h2>Testimonials</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-grid-item">
+                        <img src="resources/assets/quote.png" alt="Quote" class="quote">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem beatae dolores tenetur doloribus eligendi explicabo autem incidunt, illum accusantium placeat dicta suscipit accusamus officia, distinctio numquam quaerat nam porro! </p>
+                        <img src="resources/assets/signature.png" alt="Croft" class="signature">
+                        <h4>Deniel Croft</h4>
+                        <span>CEO, unity real state</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+<!-- END TESTIMONIAL SECTION -->
+
+
+<!-- START FOOTER SECTION-->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                    <div class="footer-grid-item uk-card-hover uk-card-body uk-light">
+                        <h2><a href="#" class="item1"><img src="resources/assets/logo.png" alt="logo"></a></h2>
+                        <p>Tristique lacus ullamcorper massa posuere nisl molestie. Nullam motes, tortor masa. Nisl tellus etiam. </p>
+                        <div class="social-list">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-behance"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="footer-grid-item uk-card-hover uk-card-body uk-light">
+                        <h2>Quick Links</h2>
+                         <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about us </a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolios</a></li>
+                            <li><a href="#">blogs</a></li>
+                            <li><a href="#">contact us</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-grid-item uk-card-hover uk-card-body uk-light">
+                        <h2>Contact Info</h2>
+                        <ul class="contact-li-ion">
+                            <li><ion-icon name="location-outline"></ion-icon>2489  Locust Court</li>
+                            <li><ion-icon name="location-outline"></ion-icon> 3927 Red Maple Drive</li>
+                            <li><ion-icon name="call-outline"></ion-icon> +63 667 341 3463</li>
+                            <li><ion-icon name="mail-outline"></ion-icon> <a href="#">contact@example.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-grid-item uk-card-hover uk-card-body uk-light">
+                        <div class="gallery-menu">
+                            <h2>Gallery</h2>
+                            <div class="gallery-grid">
+
+                                    <div class="gallery-grid-item">
+                                        <a href="resources/assets/tab1.jpg" title="" target="_blank">  
+                                            <img src="resources/assets/tab1.jpg" alt="house">
+                                        </a>
+                                    </div>
+                                   	<div class="gallery-grid-item">
+                                        <a href="resources/assets/tab2.jpg" title="" target="_blank">  
+                                            <img src="resources/assets/tab2.jpg" alt="house">
+                                        </a>
+                                    </div>
+                                   	<div class="gallery-grid-item">
+                                        <a href="resources/assets/tab3.jpg" title="" target="_blank">   
+                                            <img src="resources/assets/tab4.jpg" alt="house">
+                                        </a>
+                                    </div>	
+                                   	<div class="gallery-grid-item">
+                                        <a href="resources/assets/postimg1.jpg" title="" target="_blank">   
+                                            <img src="resources/assets/postimg1.jpg" alt="house">
+                                        </a>
+                                    </div>	
+                                    <div class="gallery-grid-item">
+                                        <a href="resources/assets/postimg2.jpg" title="" target="_blank">  
+                                            <img src="resources/assets/postimg2.jpg" alt="house">
+                                        </a>
+                                    </div>
+                                    <div class="gallery-grid-item">
+                                        <a href="resources/assets/postimg3.jpg" title="" target="_blank">  
+                                            <img src="resources/assets/postimg3.jpg" alt="house">
+                                        </a>
+                                    </div>
+                                    <div class="gallery-grid-item">
+                                        <a href="resources/assets/postimg3.jpg" title="" target="_blank">  
+                                            <img src="resources/assets/tab4.jpg" alt="house">
+                                        </a>
+                                    </div>
+                                    <div class="gallery-grid-item">
+                                        <a href="resources/assets/postimg3.jpg" title="" target="_blank">  
+                                            <img src="resources/assets/tab5.jpg" alt="house">
+                                        </a>
+                                    </div>
+                                    <div class="gallery-grid-item">
+                                        <a href="resources/assets/postimg3.jpg" title="" target="_blank">  
+                                            <img src="resources/assets/tab8.jpg" alt="house">
+                                        </a>
+                                    </div>
+                                  
+                            </div>
+                        </div>
+                    </div>
+             </div>
+        </div>
+    </footer>
+<!-- END FOOTER SECTION-->
+
+
+<!-- START FOOTER BOTTOM SECTION -->
+    <div class="footer-bottom">
+        <span>Copyright : <a href="#">MD EASIN</a> | 2022 Archi | All Rights Reserved.</span>
+        <span style="float: right; display: inline;">HTML Template By <a href="">MD Teamplates</a></span>
+        <div class="totop">
+            <a href="#" data-uk-totop data-uk-scroll></a>
+        </div>
+    </div>
+<!-- END FOOTER BOTTOM SECTION -->
+
+    <!-- JS -->
+    <script src="vendors/js/jquery-3.7.0.min.js"></script>
+    <script src="vendors/js/particles.min.js"></script>
+    <script src="vendors/js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit-icons.min.js"></script>
+
+    <script src="vendors/js/mixitup.min.js"></script>
+    <script src="resources/js/main.js"></script>
+  
+    
+</body>
+</html>
